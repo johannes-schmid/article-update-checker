@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Article Suggestions</title>
+  <style>
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px; }
+    tr:hover { background-color: #f0f0f0; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Articles</h1>
+  <table id="articles-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Suggestions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div id="suggestions-section" style="display:none; margin-top:20px;">
+    <h2>Suggestions for <span id="article-title"></span></h2>
+    <table id="suggestions-table">
+      <thead>
+        <tr><th>Suggestion</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
